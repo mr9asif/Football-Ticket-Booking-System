@@ -65,14 +65,11 @@ Relationship Summary:
 * One Match → Many Bookings
 * Each Booking belongs to one User and one Match
 
-## ERD Screenshot
- DrawSQL public link:
+## Entity Relationship Diagram (ERD)
 
-```text
+DrawSQL Public Link:
+
 [View ERD Diagram](https://drawsql.app/teams/mr9asif/diagrams/football-ticket-booking-2)
-```
-
----
 
 # 📋 SQL Queries Implemented
 
