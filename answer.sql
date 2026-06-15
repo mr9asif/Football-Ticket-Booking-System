@@ -47,7 +47,7 @@ INSERT INTO Bookings VALUES
 (504,2,101,NULL,NULL,150),
 (505,3,102,'C-20','Pending',120);
 
---query 1
+--query 1 :Retrieve all upcoming football matches belonging to the 'Champions League' where the match status is 'Available'.
 SELECT
     match_id,
     fixture,
@@ -56,7 +56,7 @@ FROM Matches
 WHERE tournament_category = 'Champions League'
 AND match_status = 'Available';
 
---query 2
+--query 2 :Search for all users whose full names start with 'Tanvir' or contain the phrase 'Haque' (case-insensitive).
 SELECT
     user_id,
     full_name,
@@ -74,7 +74,7 @@ SELECT
 FROM Bookings
 WHERE payment_status IS NULL;
 
---query 4: 
+--query 4: Retrieve match booking details along with the User's full name and the scheduled Match fixture teams.
 SELECT
     b.booking_id,
     u.full_name,
@@ -86,7 +86,7 @@ ON b.user_id = u.user_id
 INNER JOIN Matches m
 ON b.match_id = m.match_id;
 
---query 5: 
+--query 5: Display a comprehensive list of all users and their booking IDs, ensuring that fans who have never bought a ticket are still listed.
 SELECT
     u.user_id,
     u.full_name,
@@ -95,7 +95,7 @@ FROM Users u
 LEFT JOIN Bookings b
 ON u.user_id = b.user_id;
 
---query 6: 
+--query 6: Find all ticket bookings where the total cost is strictly higher than the average cost of all ticket bookings.
 SELECT
     booking_id,
     match_id,
@@ -107,7 +107,7 @@ WHERE total_cost >
     FROM Bookings
 );
 
---query 7: 
+--query 7: Retrieve the top 2 most expensive matches sorted by base ticket price, skipping the absolute highest premium match.
 SELECT
     match_id,
     fixture,
