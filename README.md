@@ -68,13 +68,14 @@ Relationship Summary:
 ## ERD Screenshot
 
 ```markdown
-![ERD Diagram](ERD.png)
+ <img width="1481" height="647" alt="ERD" src="https://github.com/user-attachments/assets/da1cb38e-86a2-4000-b2fd-b78fac6930c9" />
+
 ```
 
 Or add your DrawSQL public link:
 
 ```text
-[https://your-drawsql-link-here](https://drawsql.app/teams/mr9asif/diagrams/football-ticket-booking-2)
+[https://drawsql.app/teams/mr9asif/diagrams/football-ticket-booking-2]
 ```
 
 ---
