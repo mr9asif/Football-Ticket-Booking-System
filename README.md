@@ -69,7 +69,7 @@ Relationship Summary:
  DrawSQL public link:
 
 ```text
-[View ERD Diagram(https://drawsql.app/teams/mr9asif/diagrams/football-ticket-booking-2)
+[View ERD Diagram](https://drawsql.app/teams/mr9asif/diagrams/football-ticket-booking-2)
 ```
 
 ---
